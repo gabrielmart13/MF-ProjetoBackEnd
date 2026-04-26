@@ -16,9 +16,11 @@ namespace MF_ProjetoBackEnd.Models
         public string Placa { get; set; }
 
         [Required(ErrorMessage = "O ano de fabricação do veículo é obrigatório.")]
+        [Display(Name = "Ano de Fabricação")]
         public int AnoFabricacao { get; set; }
 
         [Required(ErrorMessage = "O ano do modelo do veículo é obrigatório.")]
+        [Display(Name = "Ano do Modelo")]
         public int AnoModelo { get; set; }
     }
 }
